@@ -9,15 +9,15 @@
     "prepare": "husky install",
     "validate": "echo\"testing the scripts\""
   },
+  "husky": {
+    "hooks": {
+      "post-commit": "echo \"[husky] post commit\"",
+      "pre-commit": "echo \"[husky] post commit\""
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pooja-Jeyasri/test.git"
-  },
-  "husky":{
-    "hooks":{
-      "post-commit":"echo \"[husky] post commit\"",
-      "pre-commit": "npm run validate"
-    }
   },
   "keywords": [],
   "author": "",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Pooja-Jeyasri/test#readme",
   "devDependencies": {
-    "standard-version": "^9.5.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.2",
+    "standard-version": "^9.5.0"
   }
 }
