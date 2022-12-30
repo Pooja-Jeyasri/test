@@ -14,7 +14,8 @@
   },
   "husky":{
     "hooks":{
-      "post-commit":"echo \"[husky] pre commit\""
+      "post-commit":"echo \"[husky] post commit\"",
+      "pre-commit": "echo \"[husky] pre commit\""
     }
   },
   "keywords": [],
