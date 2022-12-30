@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pooja-Jeyasri/test.git"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"echo \"[husky] pre commit\""
+    }
   },
   "keywords": [],
   "author": "",
@@ -19,6 +25,10 @@
   },
   "homepage": "https://github.com/Pooja-Jeyasri/test#readme",
   "devDependencies": {
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "husky": "^8.0.0"
+  },
+  "dependencies": {
+    "husky": "^8.0.2"
   }
 }
