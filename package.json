@@ -15,7 +15,7 @@
   },
   "husky":{
     "hooks":{
-      "post-commit":"echo \"[husky] pre commit\"",
+      "post-commit":"echo \"[husky] post commit\"",
       "pre-commit": "npm run validate"
     }
   },
@@ -29,8 +29,5 @@
   "devDependencies": {
     "standard-version": "^9.5.0",
     "husky": "^8.0.0"
-  },
-  "dependencies": {
-    "husky": "^8.0.2"
   }
 }
